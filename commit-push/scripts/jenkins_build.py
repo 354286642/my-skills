@@ -38,10 +38,10 @@ def load_config():
         load_dotenv(ENV_FILE)
 
     config = {
-        'JENKINS_URL': os.getenv('JENKINS_URL', 'https://jenkins-t.syounggroup.com'),
-        'JENKINS_USERNAME': os.getenv('JENKINS_USERNAME', 'jueshi'),
+        'JENKINS_URL': os.getenv('JENKINS_URL', ''),
+        'JENKINS_USERNAME': os.getenv('JENKINS_USERNAME', ''),
         'JENKINS_API_TOKEN': os.getenv('JENKINS_API_TOKEN', ''),
-        'COMM_JOB_NAME': os.getenv('JENKINS_COMM_JOB_NAME', 'znyx-java-athena-service'),
+        'COMM_JOB_NAME': os.getenv('JENKINS_COMM_JOB_NAME', ''),
         'BUILD_PARAMS': {
             'BRANCH': os.getenv('JENKINS_BUILD_BRANCH', 'test'),
             'ENV': os.getenv('JENKINS_BUILD_ENV', 'test')
