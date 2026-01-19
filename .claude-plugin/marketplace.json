@@ -1,64 +1,25 @@
 {
   "name": "my-skills",
-  "displayName": "My Skills Collection",
-  "description": "A collection of useful Claude Code skills for development workflow automation",
-  "version": "1.0.0",
-  "author": "jueshi",
-  "repository": "https://github.com/354286642/my-skills",
-  "license": "MIT",
-  "skills": [
+  "owner": {
+    "name": "jueshi"
+  },
+  "metadata": {
+    "description": "A collection of useful Claude Code skills for development workflow automation",
+    "version": "1.0.0"
+  },
+  "plugins": [
     {
-      "name": "apifox-tests",
-      "displayName": "Apifox Tests",
-      "description": "执行和解读 Apifox 自动化测试。支持多环境（dev/test/prod）、批量测试执行、并行/顺序执行模式。适用于代码提交前验证、发布前回归测试、合并分支前检查等场景。",
-      "category": "testing",
-      "tags": ["api", "testing", "apifox", "automation", "ci-cd"]
-    },
-    {
-      "name": "code-review",
-      "displayName": "Code Review",
-      "description": "本地代码走查分发入口。支持多种审查模式和指定 git revision。可作为路由器分发到不同的审查模式（如 main、kol 等），灵活适配不同的代码审查需求。",
-      "category": "code-quality",
-      "tags": ["code-review", "quality", "git", "inspection"]
-    },
-    {
-      "name": "code-review-update",
-      "displayName": "Code Review Update",
-      "description": "根据 code-review 的审查优化建议，自动进行代码修复。支持问题分类与优先级排序，可自动修复规范问题、逻辑错误、简单性能优化等。对于需要业务判断的问题会提示用户确认。",
-      "category": "code-quality",
-      "tags": ["code-review", "refactoring", "automation", "fix"]
-    },
-    {
-      "name": "commit-push",
-      "displayName": "Commit & Push",
-      "description": "自动化 Git 提交流程，包含版本号管理、提交信息确认和 UTF-8 编码处理。支持命令参数：y（自动执行）、n（仅预览）、b（触发 Jenkins 构建）。集成 Jenkins 构建触发功能。",
-      "category": "workflow",
-      "tags": ["git", "commit", "push", "jenkins", "ci-cd", "automation"]
-    },
-    {
-      "name": "enum-dict",
-      "displayName": "Enum Dict Generator",
-      "description": "枚举与字典 SQL 生成工具。将中文描述批量转换为字典键值对和可执行的 MySQL 8.0 插入脚本。支持文本输入和图片粘贴，自动生成规范的键值对格式和 SQL 语句。",
-      "category": "database",
-      "tags": ["sql", "mysql", "enum", "dictionary", "generator", "database"]
+      "name": "dev-skills",
+      "description": "Collection of development workflow skills including Apifox testing, code review, Git automation, and database tools",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./apifox-tests",
+        "./code-review",
+        "./code-review-update",
+        "./commit-push",
+        "./enum-dict"
+      ]
     }
-  ],
-  "categories": {
-    "testing": {
-      "displayName": "Testing",
-      "description": "测试相关的工具和自动化"
-    },
-    "code-quality": {
-      "displayName": "Code Quality",
-      "description": "代码质量和审查工具"
-    },
-    "workflow": {
-      "displayName": "Workflow",
-      "description": "工作流自动化工具"
-    },
-    "database": {
-      "displayName": "Database",
-      "description": "数据库相关工具"
-    }
-  }
+  ]
 }
