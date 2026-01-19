@@ -1,0 +1,4 @@
+# Ignore all .env files in any directory
+.env
+**/*.env
+.claude
