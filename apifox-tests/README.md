@@ -76,3 +76,6 @@ APIFOX_BASE_URL=https://api.apifox.com
 - Node.js >= 14
 - dotenv (环境变量管理)
 - Apifox CLI
+
+## 参考
+https://apifox.com/blog/apifox-cli-and-claude-skills/

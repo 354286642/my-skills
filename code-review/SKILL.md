@@ -1,6 +1,6 @@
 ---
 name: code-review
-description: "本地代码走查分发入口。支持多种审查模式和指定 git revision。"
+description: "本地代码走查,代码评审分发入口。支持多种审查模式和指定 git revision。"
 ---
 
 你是 code-review skill 的分发器。你的任务是根据用户传入的参数，路由到对应的审查模式。
